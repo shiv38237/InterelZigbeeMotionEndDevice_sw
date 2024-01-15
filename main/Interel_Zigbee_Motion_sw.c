@@ -1094,8 +1094,8 @@ void app_main(void)
     ret = esp_timer_create(&factory_reset_timer_args, &factory_reset_timer);
     esp_timer_start_periodic(factory_reset_timer, FACTORY_RESET_TIMER_10MIN);
     printf("factory reset timer start\n");
-    xTaskCreate(update_attribute, "update_attr", 8192, queue, 4, NULL);
-    // xTaskCreate(commissioning_task, "commissioning_switch", 2048, queue, 3, NULL);
+    xTaskCreate(update_attribute, "update_attr", 6144, queue, 4, NULL);
+    xTaskCreate(commissioning_task, "commissioning_switch", 2048, queue, 3, NULL);
     xTaskCreate(esp_zb_task, "Zigbee_main", 4096, NULL, 5, NULL);
     
 }

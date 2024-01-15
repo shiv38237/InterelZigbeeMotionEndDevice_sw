@@ -1,21 +1,21 @@
 dependencies:
-  espressif__esp-zboss-lib:
-    component_hash: null
+  espressif/esp-zboss-lib:
+    component_hash: 9dc1059b8a6695580ab0324d41f2f88e324c1486b196e20d087f3dcb78c1c654
     source:
-      path: C:\GitHub\Interel_Zigbee_Motion_sw\components\espressif__esp-zboss-lib
-      type: local
+      service_url: https://api.components.espressif.com/
+      type: service
     version: 1.0.7
-  espressif__esp-zigbee-lib:
-    component_hash: null
+  espressif/esp-zigbee-lib:
+    component_hash: 3171496afcbdf5c370a3f74f6bc6a7e3196227438b0405d8714796c9d6f68a36
     source:
-      path: C:\GitHub\Interel_Zigbee_Motion_sw\components\espressif__esp-zigbee-lib
-      type: local
+      service_url: https://api.components.espressif.com/
+      type: service
     version: 1.0.7
   idf:
     component_hash: null
     source:
       type: idf
-    version: 5.1.2
-manifest_hash: 09845f3039737ba416c9275838a3131fc63b9b619363c30749fa22093fa3bf69
+    version: 5.1.1
+manifest_hash: dca0dd8c556ad4dca75c4e5a735940346d65e2276a10b6d2e9fcd9fc93e406c9
 target: esp32c6
 version: 1.0.0
